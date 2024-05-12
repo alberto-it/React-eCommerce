@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h5 {
+    padding: 20px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    line-height: 2;
+    list-style-type: none;
+}
+
+button {
+    margin-left: 15px;
+}
+
+form {
+    padding-left: 25px;
+    max-width: 400px;
+}
+
+.selections {
+    display: flex;
+    align-items: center;
+    width: 500px; 
+    justify-content: space-between
+}
