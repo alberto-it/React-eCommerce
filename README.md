@@ -1,6 +1,6 @@
 # Mini Project: React E-commerce Web Application
 
-This is a front-end of an e-commerce application making API calls to my e-commerce Flask API (see https://github.com/alberto-it/E-commerce-API)
+This is a front-end of an e-commerce application making API calls to my e-commerce Flask ORM API (see https://github.com/alberto-it/E-commerce-API)
 
 The code consists of several React components that manage an e-commerce application.
 Here is a breakdown of the functionalities:
