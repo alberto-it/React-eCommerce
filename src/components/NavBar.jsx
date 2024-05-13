@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 const NavBar = () => {
   return ( <>
     <Navbar bg="primary" expand="sm">
-      <Navbar.Brand href="/home">E-commerce</Navbar.Brand>
+      <Navbar.Brand href="/home">&nbsp;&nbsp;&nbsp;E-commerce</Navbar.Brand>
       <Navbar.Collapse>
         <Nav>
           <Nav.Link as={NavLink} to="/home">Home</Nav.Link>
