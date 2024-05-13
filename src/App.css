@@ -30,6 +30,14 @@ form {
 .selections {
     display: flex;
     align-items: center;
-    width: 500px; 
+    width: 420px;
     justify-content: space-between
+}
+
+.order-form-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    max-width: 500px;
+    border-radius: 40px;
 }
