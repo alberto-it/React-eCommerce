@@ -5,6 +5,7 @@ const ProductSelection = ({ onSelectProduct }) => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [selectedProducts, setSelectedProducts] = useState({});
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -26,8 +27,13 @@ const ProductSelection = ({ onSelectProduct }) => {
   }, []);
 
   const handleProductChange = (e) => {
-    const selectedProductId = e.target.value;
-    onSelectProduct(selectedProductId);
+    const selectedOptions = Array.from(e.target.selectedOptions);
+    const newSelectedProducts = selectedOptions.reduce((acc, option) => {
+      acc[option.value] = true;
+      return acc;
+    }, {...selectedProducts});
+    setSelectedProducts(newSelectedProducts);
+    onSelectProduct(newSelectedProducts);
   };
 
   return (
