@@ -38,11 +38,14 @@ const OrderDetails = () => {
           <ul>
             {order.products.map((product) => (
               <li key={product.id}>
-                <p>Name: {product.name}</p>
-                <p>Price: ${product.price}</p>
+                <p>{product.name}: ${product.price}</p>
               </li>
             ))}
           </ul>
+          <p>
+          <b>Total Price: </b>$
+          {order.products.reduce((acc, product) => acc + product.price, 0)}
+        </p>
         </>
       ) : (
         <p>Order not found.</p>
