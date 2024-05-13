@@ -41,7 +41,7 @@ const OrdersList = () => {
   return (
     <div>
       <Button onClick={() => setIsCreating(!isCreating)}>
-        {isCreating ? 'Cancel Create' : 'Create New Order'}
+        {isCreating ? 'Cancel' : 'Create New Order'}
       </Button>
       {isCreating && (
         <CreateOrder onCreate={handleCreateOrder} onHideConfirmation={() => setIsCreating(false)}/>
